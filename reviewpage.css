@@ -1,0 +1,121 @@
+.container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .seller-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .seller-section img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .seller-section .seller-info {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .product-details {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .product-details img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-details h2 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .product-details p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      .product-details h2,
+      .seller-info {
+        font-size: 1rem;
+      }
+
+      .product-details p {
+        font-size: 0.9rem;
+      }
+
+      .seller-section {
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .seller-section img {
+        width: 45px;
+        height: 45px;
+      }
+    }

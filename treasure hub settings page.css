@@ -1,0 +1,199 @@
+.SettingsOptionsContainer
+{
+    padding-top: 5em;
+    position: fixed;
+    left:0%;
+    top:0%;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+   /* border-right: 1px solid black;*/
+    width: 20%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(7.6px);
+   -webkit-backdrop-filter: blur(7.6px);
+    opacity: 0.8;
+}
+
+
+
+.MainSettingsPage
+{
+    padding-top: 5em;
+    position: absolute;
+    right:0%;
+    width:80%;
+    height:100vh;
+    overflow-x: hidden;
+
+}
+
+.AccountInfoSection
+{
+    position:relative;
+    left: 10%;
+    overflow-x: hidden;
+}
+
+.SellerInfoSection
+{
+    position: relative;
+    left: 10%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.MainContainer{
+    display: flex;
+}
+
+.ContainerBox
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: inherit;
+}
+
+.ContainerBox-back
+{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    background-color: inherit;
+}
+
+.ContainerBox:hover
+{
+    background-color: rgb(199, 199, 199)
+}
+
+.ContainerBox-back:hover
+{
+    background-color: rgb(199, 199, 199)
+}
+
+
+.infoContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.infoContainer h5 {
+    margin-bottom: 5px;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 10px; /* More space between input and button */
+    align-items: center;
+}
+
+.inputContainer input {
+    width: 30em;
+    height: 30px;
+    padding: 5px;
+}
+
+.editbutton {
+    height: 34px;
+    padding: 0 15px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.editbutton:hover {
+    background-color: #0056b3;
+}
+.buttonContainer
+{
+    margin-top: 1px;
+    margin-bottom: 10px;
+    height: 40px;
+    width:60px;
+}
+.buttonContainer button
+{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: cadetblue;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.passbuttonContainer
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width:180px;
+}
+.passbuttonContainer button
+{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: cadetblue;
+    font-size:small;
+    font-weight: 500;
+}
+
+.SellerInfoSection img
+{
+    
+}
+.ProfilePic
+{
+    width:150px; 
+    height:150px; 
+    border-radius:50%; 
+    object-fit:cover;
+    border: 1px double black;
+}
+.bannerPic
+{
+    width:240px; 
+    height:135px; 
+    object-fit:cover;
+    border: 1px double black;
+}
+.SellerInfoSection input
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea {
+  resize: none;
+  width: 300px;   /* optional width */
+  height: 150px;  /* optional height */
+  padding: 10px;  /* optional padding */
+  font-size: 16px; /* optional font size */
+}
+
+.uploadbutton
+{
+    padding: 5px;
+    color: white;
+    background-color: cadetblue;
+    border-radius: 5px;
+    border: none;
+}
+

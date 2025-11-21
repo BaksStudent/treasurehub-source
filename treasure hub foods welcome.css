@@ -1,0 +1,683 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body
+{
+   /* background-image: linear-gradient(rgb(255, 244, 244),rgb(255, 247, 223));*/
+   background-color: white;
+   
+}
+.MainNavbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: rgb(255, 51, 0);
+    height: 60px;
+
+}
+.MainLogo img{
+    max-height: 60px;
+    max-width:auto ;
+    border: none;
+    border :0;
+}
+.Nav-links{
+    display: flex;
+    gap : 2em;
+}
+.Nav-Buttons
+{
+    border: none;
+    background-color: rgb(255, 51, 0);
+    color:white;
+}
+.Nav-Buttons-Mobile
+{
+    border:none;
+    width: 100%;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    padding: 5px ;
+    margin-bottom: 5px;
+   /* background-color: rgb(0, 162, 255);
+    color:  rgb(0, 162, 255);*/
+    text-align: left;
+    border-radius: 5px;
+}
+.Acc-links
+{
+    display: flex;
+    gap:10px;
+    align-items: end;
+}
+.Acc-Name
+{
+    background-color: rgb(255, 51, 0);;
+    color: white;
+    align-items: center;
+}
+
+.Acc-links-mobile
+{
+    display: flex;
+    gap:5px;
+    align-items:flex-end;
+    margin-top: 10px;
+}
+
+.Acc-Name-mobile
+{
+    
+    color:rgb(255, 51, 0);;
+    padding: 5px;
+    font-weight: bold;
+}
+.Account-Buttons
+{
+    background-color: white;
+    color:rgb(255, 51, 0);
+    border: none;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.Account-Buttons-mobile
+{
+    background-color: rgb(255, 51, 0);
+    color:white;
+    border: none;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.Nav-Buttons:hover
+{
+    background-color: rgb(255, 51, 0);
+    font-weight: bold;
+}
+#DROP
+{
+    border: none;
+    background-color: rgb(255, 51, 0);
+    color: white;
+}
+#DROP_Mobile
+{
+    border:none;
+    background-color: rgb(255, 51, 0);
+    color: white;
+    border-radius: 5px;
+}
+.DropText
+{
+    color:white;
+}
+.menu-icon{
+    color:white;
+}
+.MobileMenu
+{
+     background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+   -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: none;
+    flex-direction: column;
+    position:fixed;
+    top:60px;
+    opacity: 0.95;
+    width: 50%;
+    right: 0;
+    height: 100%;
+   /* background-color: rgb(216, 216, 216);*/
+    padding: 20px;
+    border-radius: 6px;
+    /*box-shadow: -2px 0 5px rgba(0,0,0,0.2);*/
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+
+}
+.MobileMenu button, .MobileMenu select
+{
+    display: block;
+    margin:  2;
+    width: 100%;
+    padding: 10px;
+   /* margin-bottom: 10px;*/
+   /* font-size: 1.2em;*/
+    border: 1px solid #e2e2e2;
+    background-color: rgb(255, 51, 0);
+    cursor: pointer;
+}
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.MobileDropText{
+    align-items:start;
+}
+
+.mobile-menu.active {
+    right: 0;
+    display: flex;
+}
+.Main_Search{
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
+    gap:10px;
+
+}
+.searchbar-form
+{
+    width: 100%;
+    display: flex;
+}
+.Search-Bar{
+    display: flex;
+    width: 100%;
+    padding: 5px auto;
+    padding-right: 5px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+}
+.SearchButton{
+    background-color: none;
+    border: none;
+    color:rgb(255, 51, 0) ;
+}
+@media only screen and (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .logo-btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.WelcomePlaceholder
+{
+    margin: 30px ;
+    position: relative;
+    width: 40%;
+}
+.WelcomeParagraph
+{
+    display: flex;
+    font-weight: bold;
+    font-size:large;
+}
+.CategoryBar
+{
+    left: 0;
+    width:100%;
+    position: relative;
+    height: auto;
+    background-color:rgb(255, 255, 255) ;
+    padding: 5px auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.CategoryText
+{
+    margin-bottom: 20px auto;
+    font-weight: bold;
+    font-size: auto;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.PlaceholderImage
+{
+    font-size: larger auto;
+    color: rgb(0, 162, 255) ;
+    /*background-color: rgb(0, 0, 0);*/
+    padding: 5px ;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2px;
+   
+}
+.CategoryBar p
+{
+    color: black;
+    font-size: auto;
+    text-align: center;
+    justify-content: center;
+    font-size:smaller auto;
+}
+
+.CatergoryBar-Mobile
+{
+    left: 0;
+    width:100%;
+    position: relative;
+    height: 100px; 
+    background-color:rgb(255, 255, 255) ;
+    padding: 5px auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: block;
+    height: auto;
+}
+.CategoryPlaceholder-Mobile
+{
+    display: block;
+}
+.PlaceholderImage-mobile
+{
+    font-size: larger auto;
+    color: rgb(255, 255, 255) ;
+    /*background-color: rgb(0, 0, 0);*/
+    padding: 5px ;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2px;  
+}
+.CategoryText-mobile
+{
+    margin-bottom: 5px auto;
+    font-weight: bold;
+    font-size: auto;
+    color: black;
+    justify-content: center;
+    text-align: center; 
+    
+}
+.CategoryMobileRectangle
+{
+    display: flex;
+    gap:3em;
+    width: 100%;
+    overflow-y: auto;
+}
+.CatergoryBar-Mobile p
+{
+    color: black;
+    font-size: auto;
+    text-align: center;
+    justify-content: center;
+    font-size:smaller auto;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.recentlyAdded
+{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 12px;
+    background-color: rgba(255, 0, 0, 0.363);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+   -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow-x: auto;
+    position: relative;
+    display: block;
+    overflow-y: hidden;
+    align-items: left;
+}
+.sellerSection
+{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 12px;
+    background-color: rgba(255, 0, 0, 0.363);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+   -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow-x: auto;
+    position: relative;
+    display: block;
+    overflow-y: hidden;
+    align-items: left;
+}
+.sellersSectionTitle
+{
+    padding:1px;
+    margin-left: 5px;
+    color:white;
+}
+.recentlyAddedContainer
+{
+    display: flex;
+    padding: 20px;
+    gap: 2em;
+}
+.sellerSectionContainer
+{
+    display: flex;
+    padding: 20px;
+    gap: 2em;
+}
+.recentlyAddedItem
+{
+   /* border-style: dashed;*/
+    display: block;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-bottom: 1px;
+    height: 12em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 9px;
+    width:21em;
+    
+}
+.sellersSectionItem
+{
+    display: block;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-bottom: 1px;
+    height: 12em;
+    border-radius: 9px;
+    width:16em;
+}
+.sellersSectionItemitle
+{
+    color: white;
+    align-items: center;
+    left:28%;
+    position: relative;
+}
+.sellerSectionContainer img
+{
+    width: 80%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    align-items: center;
+    padding: 2px;
+    padding-left: 40px;
+    border-radius: 50%;
+}
+.recentlyAddedContainer img
+{
+    width: 80%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    align-items: center;
+    padding: 2px;
+    padding-left: 40px;
+
+}
+.recentlyAddedTitle
+{
+    padding: 1px;
+    color: white;
+    margin:5px;
+}
+
+.recentlyAddedItemTitle
+{
+    display: -webkit-box;  
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    word-break: break-word;
+}
+.recentlyAddedItemDescription
+{
+    height: 30px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-break: 2;
+   /* line-break: 2;*/
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+.recentlyAddedMobile
+{
+    width:100%;
+    min-height: 260px;
+    height: auto;
+    padding-bottom: 3px;
+    background-color: rgba(255, 0, 0, 0.363);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+   -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow-x: auto;
+    display: block;
+    position: relative;   
+}
+.recentlyAddedTitleMobile
+{
+    padding: 1px;
+    font-size:medium;
+    font-weight: bold;
+    color: white;
+   
+}
+.recentlyAddedContainerMobile
+{
+    display: flex;
+    margin: 1px;
+    gap: 1em;
+    height: auto;
+    padding-bottom: 3px;
+}
+.recentlyAddedContainerMobile img
+{
+    width: 80%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    align-items: center;
+    padding: 4px;
+    padding-left: 40px;
+
+}
+.ItemPlaceholderMobile
+{
+   /* border-style: dashed;*/
+    display: block;
+    margin-top: 0;
+    margin-left: 10px;
+    padding: 4px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    margin-bottom: 1px;
+    min-height: 12em;
+    height: auto;
+    min-width: 13em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 9px;
+    
+}
+.ItemTitleMobile
+{
+    margin-bottom: 0%;
+    font-weight: bold;
+    
+}
+.ItemPriceMobile
+{
+    font-weight: bold;
+}
+.recentlyAddedTitle
+{
+    padding: 1px;
+}
+.recentlyAddedItemDescription
+{
+    display: -webkit-box;  
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    word-break: break-word;
+    height: auto; 
+    height: 40px; 
+
+}
+.MainBannerContainer img{
+   
+    width:40%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    border-radius: 5px;
+}
+.MainBannerContainer
+{
+    padding:30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 25%;
+    right: 30%;
+}
+.MainBannerContainerMobile
+{
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    align-items: center;
+    left:10%;
+    margin-bottom: 20px;
+    
+}
+.MainBannerContainerMobile img
+{
+    width:80%;
+    height: auto;
+    max-height: 200px;
+    display: block;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.DesktopHeaderContainer
+{
+    position:absolute;
+    left:0;
+    width:10%;
+}
+
+.DesktopContainer
+{
+    position:absolute;
+    left:10%;
+    width: 100%;
+    padding-bottom: 20;
+    
+}
+.SectionContainer
+{
+    display: block;
+    width:100%;
+    margin-bottom: 20px;
+   padding: 20px;
+}
+
+.sellersSectionMobile
+{
+    width:100%;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.363);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+   -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: block;
+    position: relative;   
+}
+.sellersSectionTitleMobile
+{
+    padding: 1px;
+    font-size:medium;
+    font-weight: bold;
+    color: white;
+   
+}
+.sellersSectionContainerMobile
+{
+    display: flex;
+    margin: 1px;
+    gap: 1em;
+}
+.sellersSectionContainerMobile img
+{
+    min-width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: center;
+    padding: 4px;
+    padding-left: 40px;
+
+}
+.sellersPlaceholderMobile
+{
+   /* border-style: dashed;*/
+    display: block;
+    margin-top: 0;
+    margin-left: 10px;
+    padding: 4px;
+    margin-bottom: 1px;
+    height: 12em;
+    width: 13em;
+    border-radius: 9px;
+}
+.sellersPlaceholderMobile p
+{
+   color:white;
+   font-weight: bold;
+   align-items: center;
+   position: relative;
+   left:25%;
+}
+.sellersPlaceholderMobile img
+{
+    min-width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: center;
+    padding: 4px;
+    padding-left: 40px;
+}
+
+.sellersItemMobile
+{
+    display: -webkit-box;  
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    word-break: break-word;
+}

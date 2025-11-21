@@ -1,0 +1,138 @@
+.seller-details-container {
+    max-width: 600px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.users-details-container
+{
+    padding: 15px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.form-section, .address-section {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.address-section h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.verify-btn {
+    background-color: #28a745;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+
+
+.section {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+        }
+        .section h3 {
+            margin-top: 0;
+        }
+        .field {
+            margin-bottom: 10px;
+        }
+        .field label {
+            font-weight: bold;
+            display: inline-block;
+            width: 110px;
+        }
+        .address-box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        .orders-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .orders-table th, .orders-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .orders-table th {
+            background-color: #f4f4f4;
+        }
+.delete-button {
+    background-color: #e63946;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: rgb(0, 225, 255);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.delete-button:hover {
+    background-color: #c91832;
+}

@@ -1,0 +1,113 @@
+.foodsContainer
+{   
+    display: flex;
+    position:absolute;
+    left:11%;
+    width: 89%;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.searchbar
+{
+    gap: 5px;
+    display: flex;
+    width: 100%;
+}
+.foodsItemPlaceholder{
+    height: 12em;
+    width:13em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+   
+    
+
+}
+.foodsItemPlaceholder-imageContainer
+{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 0;
+}
+.foodsItemPlaceholder-imageContainer img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+.foodsItemPlaceholder-nameContainer
+{
+    text-align: left;
+    padding-right: 0%;
+    font-size: medium;
+    font-weight: 600;
+    height: auto;
+    margin: 0;
+    padding-left: 2px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.foodsItemPlaceholder-SellerNameContainer
+{
+    font-weight: 600;
+    color:rgb(255, 51, 0) ;
+    margin: 0;
+    padding-bottom: 0%;
+    padding-left: 2px
+}
+.foodsItemPlaceholder-PriceContainer
+{
+    padding-left: 2px;
+}
+.foodsItemPlaceholder-SellerNameContainer p
+{
+    margin: 1px;
+     
+}
+
+.foodsItemPlaceholder-nameContainer p 
+{
+    margin: 1px;
+}
+
+.foodsItemPlaceholder-PriceContainer p
+{
+    margin: 1px;
+}
+
+
+@media (max-width:700px) 
+{
+    .foodsContainer
+    {   
+        display: flex;
+        position:absolute;
+        width: 90%;
+        left:5%;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+}
+
+@media (max-width:550px) 
+{
+    .foodsContainer
+    {   
+        display: flex;
+        position:absolute;
+        width: 100%;
+        left:0%;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        gap:20px;
+        margin-left: 30px;
+    }   
+}

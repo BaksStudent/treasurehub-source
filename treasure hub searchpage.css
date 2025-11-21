@@ -1,0 +1,716 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+   
+    
+}
+body
+{
+    overflow-y: auto;
+}
+body:not(header)
+{
+    background-color: rgb(250, 250, 250);
+}
+.MainNavbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: cadetblue;
+    height: 60px;
+
+}
+.MainLogo img{
+    max-height: 60px;
+    max-width:auto ;
+    border: none;
+    border :0;
+}
+.Nav-links{
+    display: flex;
+    gap : 2em;
+}
+.Acc-links
+{
+    display: flex;
+    gap:10px;
+    align-items: end;
+}
+.Nav-Buttons
+{
+    border: none;
+    background-color: cadetblue;
+    color:white;
+}
+
+.Nav-Buttons-Mobile
+{
+    border:none;
+    width: 100%;
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    padding: 5px ;
+    margin-bottom: 5px;
+   /* background-color: rgb(0, 162, 255);
+    color:  rgb(0, 162, 255);*/
+    text-align: left;
+    border-radius: 5px;
+}
+.Account-Buttons
+{
+    background-color: white;
+    color:cadetblue;
+    border: none;
+    padding: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.Nav-Buttons:hover
+{
+    background-color: rgb(72, 118, 119);
+    font-weight: bold;
+}
+#DROP
+{
+    border: none;
+    background-color: cadetblue;
+    color: white;
+}
+.FilterBar
+{
+    left: 0;
+    width:100%;
+    position: relative;
+    height: 100%; 
+    height: 100vh;
+    background-color:cadetblue ;
+    padding: 5px auto;
+    
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.DesktopHeaderContainer
+{
+    position:absolute;
+    left:0;
+    width:20%;
+    background-color: rgb(250, 250, 250);;
+}
+
+.DesktopContainer
+{
+    position:absolute;
+    left:20%;
+    width: 80%;
+    padding-bottom: 20;
+    background-color: rgb(250, 250, 250);;
+    
+}
+.SectionContainer
+{
+    /*
+    display: block;
+    width:100%;
+    margin-bottom: 20px;
+   padding: 20px;*/
+   display: block;
+}
+.SearchContainer
+{
+    display: flex;
+    width: 100%;
+    background-color: rgb(250, 250, 250);;
+    
+}
+.contentSection
+{
+    display: flex;
+    width: 80%;
+    left:20%;
+    
+}
+
+.searchbar-form
+{
+    position: relative;
+    width: 70%;
+    left:10%;
+}
+
+
+.searchbar
+{
+    
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+    
+    
+    
+}
+.searchbar input[type = text]
+{
+    align-items: middle;
+    border-radius: 5px;
+    width: 90%;
+    
+}
+.searchbar i
+{
+    color:cadetblue;
+    right:0%;
+}
+.dropdown
+{
+    width:100%;
+    position: relative;
+    color: white;
+}
+.dropdown-title
+{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.pricedropdown-title
+{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+.pricedropdown-title p
+{
+    margin:0
+    
+}
+.pricedropdown-title i
+{
+    margin-left: 10px;
+}
+.sortdropdown-title
+{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+.sortdropdown-title p
+{
+    margin:0;
+}
+.sortdropdown-title i
+{
+    margin-left: 10px;
+}
+.filterdropdown-title
+{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+.filterdropdown-title p
+{
+    margin:0;
+}
+.filterdropdown-title i
+{
+    margin-left: 10px;
+}
+.dropdown-content
+{
+    display: none;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.price-inputs
+{
+    /*display: flex;
+
+    align-items: center;*/
+    justify-content: space-between;
+}
+.price-inputs input
+{
+    width: 90%;
+    padding: 1px;
+}
+.price-inputs span
+{
+    padding: 0 1px;
+
+}
+.dropdown.active .dropdown-content
+{
+    display: block;
+}
+.FilterText
+{
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.DesktopItemPlaceholder
+{
+    position: relative;
+    background-color: white;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    width:90%;
+    height: 200px;
+    padding:10px;
+   /* left: 10%;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.imageSection
+{
+    width:20%;
+    left:0;
+
+}
+.imageSection img
+{
+    width: 100%;
+    height:100%;
+
+}
+.itemNameandDescription
+{
+    width:70%;
+    display: block;
+    padding:1px;
+   
+}
+.itemPriceandButton
+{
+    right:0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+.itemPriceandButton button
+{
+    align-items: end;
+    right:0;
+    width: 80%;
+    height:50px;
+    background-color: cadetblue;
+    color: white;
+    border:none;
+    border-radius: 3px;
+}
+.cartFilledButton
+{
+    align-items: end;
+    right:0;
+    width: 80%;
+    height:50px;
+    background-color: rgb(0, 143, 48);
+    color: white;
+    border:none;
+    border-radius: 3px;   
+}
+.itemNamePlacholder
+{
+    width:40%;
+    
+    /*padding-left:5px;
+    padding-bottom: 5px;*/
+    height: auto;
+    max-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    font-weight: 600;
+    font-size: large;
+
+}
+.itemDescriptionPlaceholder
+{
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    max-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+
+}
+
+.dropdown-content button
+{
+    width: auto;
+    height: auto;
+    padding:5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: rgb(42, 69, 70);
+    font-weight: 600;
+    margin-top: 5px;
+    justify-content: center;
+
+}
+
+
+
+/* Mobile stuff */
+.MobileNavbar
+{
+    height: 60px;
+    width: 100%;
+    position:sticky;
+    display: flex;
+    background-color: cadetblue;
+    padding:10px 25px;
+}
+.filterButton
+{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    left:0;   
+}
+.filterButton i
+{
+    color:white;
+    font-size:larger;
+}
+.logoContainer
+{
+    
+    width: 40%;
+    left:30%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.logoContainer img
+{
+    
+    height: 100%;
+    max-height: 50px;
+    width: auto;
+    
+}
+.barsContainer
+{
+    width: 30%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.menu-icon
+{
+    color: white;
+    font-size: larger;
+}
+
+.mobileFiltersMenu
+{
+     background-color: cadetblue;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+   -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: none;
+    flex-direction: column;
+    position:fixed;
+    top:60px;
+    opacity: 0.9;
+    width: 50%;
+    left: 0;
+    height: 100%;
+   /* background-color: rgb(216, 216, 216);*/
+    padding: 20px;
+    border-radius: 6px;
+    /*box-shadow: -2px 0 5px rgba(0,0,0,0.2);*/
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+
+}
+.mobileSeachContainer
+{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#mobileSearch
+{
+    width: 60%;
+    border-radius: 10px;
+}
+.mobilesearchbar-form
+{
+    height: 30px;
+    width: 100%;
+}
+.mobileSearchbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    width: 100%;
+    height: 100%;
+
+}
+.mobileSearchbar i
+{
+    background-color: cadetblue;
+    color: white;
+    border-radius: 50%;
+    padding:6px;
+
+}
+.mobileContentSection
+{
+    position:relative;
+    background-color: rgb(250, 250, 250);
+}
+/*
+.mobileItemPlaceholder
+{
+    position: relative;
+    background-color: white;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    width:90%;
+    left:5%;
+    height: 160px;
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mobileImageSection
+{
+    left:0%;
+    width: 40%;
+    justify-content: center;
+}
+
+.mobileImageSection img
+{
+    width: 100%;
+    max-width: 160px;
+    height: 100%;
+}
+.mobileItemContentSection
+{
+    width: 60%;
+    right:0%;
+    padding-left: 4px;
+    
+}
+.mobileItemPlaceholderTitle
+{
+    width: 80%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-break: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    font-weight: bold;
+}
+
+.mobileItemPlaceholderDescrip
+{
+    height: 40px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+
+}
+.mobileItemPlaceholderDescrip p
+{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+
+}
+
+.mobilePriceandbuttonSec
+{
+    display: flex;
+    height: 100%;
+    max-height: 60px;
+    justify-content: space-between;
+    
+}
+.mobileItemPrice
+{
+    
+    justify-content:left;
+    font-weight: 500;
+    align-items: end;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.mobileitemCartPlacehholder{
+    align-items: end;
+    justify-content: right;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    border:none;
+    border-radius: 3px;
+    margin-left: 10;
+    height: 60%;
+    padding: 5px;
+    margin-top: 10px;
+}*/
+
+
+.mobileItemPlaceholder {
+    position: relative;
+    background-color: white;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    width: 90%;
+    left: 5%;
+    min-height: 160px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.mobileImageSection {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileImageSection img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    object-fit: cover;
+}
+
+.mobileItemContentSection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.mobileItemPlaceholderTitle {
+    font-weight: bold;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.mobileItemPlaceholderDescrip {
+    flex-grow: 1;
+    overflow: hidden;
+    margin: 5px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.mobileItemPlaceholderDescrip p {
+    margin: 0;
+    word-break: break-word;
+}
+
+.mobilePriceandbuttonSec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.mobileItemPrice p {
+    font-weight: 500;
+    margin: 0;
+    font-size: 16px;
+}
+
+.mobileitemCartPlacehholder {
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mobilecartFilledButton {
+    background-color: rgb(0, 143, 48);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.menu-icon2{
+    color:white;
+}
+
+
+
+
+
+@media (min-width: 537px) and (max-width: 700px) 
+{
+    .mobileImageSection img
+    {
+        left:5%;
+    }    
+}
